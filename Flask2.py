@@ -258,7 +258,7 @@ def Zapovnenya():
 
     if typeofdoc == "1":
         if str(OrendaOrPryvOrZem) == "1":
-            doc = DocxTemplate(r"C:\Users\Manager_2\PycharmProjects\pythonProject1\Шаблони\Шаблони_оренда_ФІЗ\Зразок_заяви_на_участь_для_ФІЗ.docx")
+            doc = DocxTemplate("Шаблони\Шаблони_оренда_ФІЗ\Зразок_заяви_на_участь_для_ФІЗ.docx")
             context = {'Code': Code, 'FullName1': FullName1, 'Adresa': Adresa, 'LotTitle': LotTitle,
                     'LotNumber': LotNumber,
                     'day2': day2, 'month': month, 'pibfull': pibfull, 'year': year}
@@ -281,7 +281,7 @@ def Zapovnenya():
                 url_dl0 = str(shared_link_metadata.url)
                 url = url_dl0.replace('dl=0', 'dl=1')
         elif str(OrendaOrPryvOrZem) == "2":
-            doc = DocxTemplate(r"C:\Users\Manager_2\PycharmProjects\pythonProject1\Шаблони\Шаблони_приватизація_ФІЗ\Заява_на_участь_ФІЗ_приватизація.docx")
+            doc = DocxTemplate("Шаблони\Шаблони_приватизація_ФІЗ\Заява_на_участь_ФІЗ_приватизація.docx")
             context = {'Code': Code, 'FullName1': FullName1, 'Adresa': Adresa, 'LotTitle': LotTitle,
                        'LotNumber': LotNumber,
                        'day2': day2, 'month': month, 'pibfull': pibfull, 'year': year}
@@ -296,7 +296,7 @@ def Zapovnenya():
             with open(filename, "rb") as f:
                 dbx.files_upload(f.read(), '/folder_' + str(Code) + '/' + filename, mute=True)
 
-            doc = DocxTemplate(r"C:\Users\Manager_2\PycharmProjects\pythonProject1\Шаблони\Шаблони_приватизація_ФІЗ\Згода_з_умовами_ФІЗ_приватизація.docx")
+            doc = DocxTemplate("Шаблони\Шаблони_приватизація_ФІЗ\Згода_з_умовами_ФІЗ_приватизація.docx")
             context = {'Code': Code, 'FullName1': FullName1, 'Adresa': Adresa, 'LotTitle': LotTitle,
                        'LotNumber': LotNumber,
                        'day2': day2, 'month': month, 'pibfull': pibfull, 'year': year}
@@ -310,7 +310,7 @@ def Zapovnenya():
             url = url_dl0.replace('dl=0', 'dl=1')
 
         elif str(OrendaOrPryvOrZem) == "3":
-            doc = DocxTemplate(r"C:\Users\Manager_2\PycharmProjects\pythonProject1\Шаблони\Шаблони_земля_ФІЗ\Зразок_заяви_на_участь_ЗЕМЛЯ_для_ФІЗ.docx")
+            doc = DocxTemplate("Шаблони\Шаблони_земля_ФІЗ\Зразок_заяви_на_участь_ЗЕМЛЯ_для_ФІЗ.docx")
             context = {'Code': Code, 'FullName1': FullName1, 'Adresa': Adresa, 'LotTitle': LotTitle,
                        'LotNumber': LotNumber,
                        'day2': day2, 'month': month, 'pibfull': pibfull, 'year': year}
@@ -335,7 +335,7 @@ def Zapovnenya():
 
     elif typeofdoc == "3":
         if str(OrendaOrPryvOrZem) == '1':
-            doc = DocxTemplate(r"C:\Users\Manager_2\PycharmProjects\pythonProject1\Шаблони\Шаблони_оренда_ФОП\Зразок_заяви_на_участь_для_ФОП.docx")
+            doc = DocxTemplate("Шаблони\Шаблони_оренда_ФОП\Зразок_заяви_на_участь_для_ФОП.docx")
             context = {'Code': Code, 'FullName2': FullName2, 'Adresa': Adresa, 'LotTitle': LotTitle,
                        'LotNumber': LotNumber,
                        'day2': day2, 'month': month, 'pibfull': pibfull, 'year': year}
@@ -358,7 +358,7 @@ def Zapovnenya():
                 url_dl0 = str(shared_link_metadata.url)
                 url = url_dl0.replace('dl=0', 'dl=1')
         elif str(OrendaOrPryvOrZem) == '2':
-            doc = DocxTemplate(r"C:\Users\Manager_2\PycharmProjects\pythonProject1\Шаблони\Шаблони_приватизація_ФОП\Заява_на_участь_ФОП_приватизація.docx")
+            doc = DocxTemplate("Шаблони\Шаблони_приватизація_ФОП\Заява_на_участь_ФОП_приватизація.docx")
             context = {'Code': Code, 'FullName2': FullName2, 'Adresa': Adresa, 'LotTitle': LotTitle,
                        'LotNumber': LotNumber,
                        'day2': day2, 'month': month, 'pibfull': pibfull, 'year': year}
@@ -373,7 +373,7 @@ def Zapovnenya():
             with open(filename, "rb") as f:
                 dbx.files_upload(f.read(), '/folder_' + str(Code) + '/' + filename, mute=True)
 
-            doc = DocxTemplate(r"C:\Users\Manager_2\PycharmProjects\pythonProject1\Шаблони\Шаблони_приватизація_ФОП\Згода_з_умовами_ФОП_приватизація.docx")
+            doc = DocxTemplate("Шаблони\Шаблони_приватизація_ФОП\Згода_з_умовами_ФОП_приватизація.docx")
             context = {'Code': Code, 'FullName2': FullName2, 'Adresa': Adresa, 'LotTitle': LotTitle,
                        'LotNumber': LotNumber,
                        'day2': day2, 'month': month, 'pibfull': pibfull, 'year': year}
@@ -386,7 +386,7 @@ def Zapovnenya():
             url_dl0 = str(shared_link_metadata.url)
             url = url_dl0.replace('dl=0', 'dl=1')
         elif str(OrendaOrPryvOrZem) == "3":
-            doc = DocxTemplate(r"C:\Users\Manager_2\PycharmProjects\pythonProject1\Шаблони\Шаблони_земля_ФОП\Зразок_заяви_на_участь_ЗЕМЛЯ_для_ФОП.docx")
+            doc = DocxTemplate("Шаблони\Шаблони_земля_ФОП\Зразок_заяви_на_участь_ЗЕМЛЯ_для_ФОП.docx")
             context = {'Code': Code, 'FullName2': FullName2, 'Adresa': Adresa, 'LotTitle': LotTitle,
                        'LotNumber': LotNumber,
                        'day2': day2, 'month': month, 'pibfull': pibfull, 'year': year}
@@ -411,7 +411,7 @@ def Zapovnenya():
 
     elif typeofdoc == "2":
         if str(OrendaOrPryvOrZem) == '1':
-            doc = DocxTemplate(r"C:\Users\Manager_2\PycharmProjects\pythonProject1\Шаблони\Шаблони_оренда_ТЗОВ\Зразок_заяви_на_участь_для_ЮО.docx")
+            doc = DocxTemplate("Шаблони\Шаблони_оренда_ТЗОВ\Зразок_заяви_на_участь_для_ЮО.docx")
             context = {'Code': Code, 'FullName1': FullName1, 'Adresa': Adresa, 'LotTitle': LotTitle,
                        'LotNumber': LotNumber,
                        'day2': day2, 'month': month, 'mainPP_position': mainPP_position, 'mainPP_name': mainPP_name,
@@ -427,7 +427,7 @@ def Zapovnenya():
             with open(filename, "rb") as f:
                 dbx.files_upload(f.read(), '/folder_' + str(Code) + '/' + filename, mute=True)
 
-            doc = DocxTemplate(r"C:\Users\Manager_2\PycharmProjects\pythonProject1\Шаблони\Шаблони_оренда_ТЗОВ\Форма_Довідки_про_бенефіціарних_власників.docx")
+            doc = DocxTemplate("Шаблони\Шаблони_оренда_ТЗОВ\Форма_Довідки_про_бенефіціарних_власників.docx")
             context = {'Code': Code, 'FullName1': FullName1, 'Adresa': Adresa, 'LotTitle': LotTitle,
                        'LotNumber': LotNumber,
                        'day2': day2, 'month': month, 'mainPP_position': mainPP_position, 'mainPP_name': mainPP_name,
@@ -451,7 +451,7 @@ def Zapovnenya():
             doc.render(context)
             doc.save("Довідка_про_відсутність_кінцевого_бенефіциарного_власника_r.docx")
         elif str(OrendaOrPryvOrZem) == '2':
-            doc = DocxTemplate(r"C:\Users\Manager_2\PycharmProjects\pythonProject1\Шаблони\Шаблони_приватизація_ТЗОВ\Форма_Довідки_про_бенефіціарних_власників.docx")
+            doc = DocxTemplate("Шаблони\Шаблони_приватизація_ТЗОВ\Форма_Довідки_про_бенефіціарних_власників.docx")
             context = {'Code': Code, 'FullName1': FullName1, 'Adresa': Adresa, 'LotTitle': LotTitle,
                        'LotNumber': LotNumber,
                        'day2': day2, 'month': month, 'mainPP_position': mainPP_position, 'mainPP_name': mainPP_name,
@@ -477,7 +477,7 @@ def Zapovnenya():
             doc.render(context)
             doc.save("Довідка_про_відсутність_кінцевого_бенефіциарного_власника_r.docx")
 
-            doc = DocxTemplate(r"C:\Users\Manager_2\PycharmProjects\pythonProject1\Шаблони\Шаблони_приватизація_ТЗОВ\Заява_на_участь(приватизація).docx")
+            doc = DocxTemplate("Шаблони\Шаблони_приватизація_ТЗОВ\Заява_на_участь(приватизація).docx")
             context = {'Code': Code, 'FullName1': FullName1, 'Adresa': Adresa, 'LotTitle': LotTitle,
                        'LotNumber': LotNumber,
                        'day2': day2, 'month': month, 'mainPP_position': mainPP_position, 'mainPP_name': mainPP_name,
@@ -489,7 +489,7 @@ def Zapovnenya():
             with open(filename, "rb") as f:
                 dbx.files_upload(f.read(), '/folder_' + str(Code) + '/' + filename, mute=True)
 
-            doc = DocxTemplate(r"C:\Users\Manager_2\PycharmProjects\pythonProject1\Шаблони\Шаблони_приватизація_ТЗОВ\Згода_з_умовами_аукціону(приватизація).docx")
+            doc = DocxTemplate("Шаблони\Шаблони_приватизація_ТЗОВ\Згода_з_умовами_аукціону(приватизація).docx")
             context = {'Code': Code, 'FullName1': FullName1, 'Adresa': Adresa, 'LotTitle': LotTitle,
                        'LotNumber': LotNumber,
                        'day2': day2, 'month': month, 'mainPP_position': mainPP_position, 'mainPP_name': mainPP_name,
@@ -504,7 +504,7 @@ def Zapovnenya():
             url_dl0 = str(shared_link_metadata.url)
             url = url_dl0.replace('dl=0', 'dl=1')
         elif str(OrendaOrPryvOrZem) == "3":
-            doc = DocxTemplate(r"C:\Users\Manager_2\PycharmProjects\pythonProject1\Шаблони\Шаблони_земля_ТЗОВ\Зразок_заяви_на_участь_ЗЕМЛЯ_для_ЮО.docx")
+            doc = DocxTemplate("Шаблони\Шаблони_земля_ТЗОВ\Зразок_заяви_на_участь_ЗЕМЛЯ_для_ЮО.docx")
             context = {'Code': Code, 'FullName1': FullName1, 'Adresa': Adresa, 'LotTitle': LotTitle,
                        'LotNumber': LotNumber,
                        'day2': day2, 'month': month, 'mainPP_position': mainPP_position, 'mainPP_name': mainPP_name,
@@ -521,7 +521,7 @@ def Zapovnenya():
             with open(filename, "rb") as f:
                 dbx.files_upload(f.read(), '/folder_' + str(Code) + '/' + filename, mute=True)
 
-            doc = DocxTemplate(r"C:\Users\Manager_2\PycharmProjects\pythonProject1\Шаблони\Шаблони_земля_ТЗОВ\Форма_Довідки_про_бенефіціарних_власників.docx")
+            doc = DocxTemplate("Шаблони\Шаблони_земля_ТЗОВ\Форма_Довідки_про_бенефіціарних_власників.docx")
             context = {'Code': Code, 'FullName1': FullName1, 'Adresa': Adresa, 'LotTitle': LotTitle,
                        'LotNumber': LotNumber,
                        'day2': day2, 'month': month, 'mainPP_position': mainPP_position, 'mainPP_name': mainPP_name,
