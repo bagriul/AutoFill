@@ -23,7 +23,7 @@ def Zapovnenya():
     global url
     def Benef():
         cookies = browser_cookie3.chrome(
-            cookie_file='GalContract+Vkursi Cookies')
+            cookie_file='\GalContract+Vkursi Cookies')
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36",
             "Accept-Encoding": "gzip, deflate",
@@ -103,7 +103,7 @@ def Zapovnenya():
     # member = "Ханас Роман"
 
     cookies = browser_cookie3.chrome(domain_name='.tsbgalcontract.org.ua',
-                                     cookie_file='GalContract+Vkursi Cookies')
+                                     cookie_file='\GalContract+Vkursi Cookies')
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36",
         "Accept-Encoding": "gzip, deflate",
@@ -130,7 +130,7 @@ def Zapovnenya():
 
     UserInfoPage = "https://sales.tsbgalcontract.org.ua/DataHandler.ashx?CN=0&CommandName=jGetDetailMember&id=" + MemberID
     cookies = browser_cookie3.chrome(domain_name='.tsbgalcontract.org.ua',
-                                     cookie_file=r'C:\Users\Manager_2\PycharmProjects\TableGC\GalContract+Vkursi Cookies')
+                                     cookie_file='\GalContract+Vkursi Cookies')
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36",
         "Accept-Encoding": "gzip, deflate",
@@ -258,7 +258,7 @@ def Zapovnenya():
 
     if typeofdoc == "1":
         if str(OrendaOrPryvOrZem) == "1":
-            doc = DocxTemplate("Шаблони\Шаблони_оренда_ФІЗ\Зразок_заяви_на_участь_для_ФІЗ.docx")
+            doc = DocxTemplate("\Шаблони\Шаблони_оренда_ФІЗ\Зразок_заяви_на_участь_для_ФІЗ.docx")
             context = {'Code': Code, 'FullName1': FullName1, 'Adresa': Adresa, 'LotTitle': LotTitle,
                     'LotNumber': LotNumber,
                     'day2': day2, 'month': month, 'pibfull': pibfull, 'year': year}
